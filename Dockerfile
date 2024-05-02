@@ -14,7 +14,7 @@ COPY package*.json ./
 RUN npm install
 
 # Copy the application code to the working directory
-COPY . .
+COPY app.js ./
 
 # Expose RTMP and HTTP ports
 EXPOSE 1935 8000
